@@ -11,10 +11,21 @@
 #
 
 #Git Theme
-cd package/feeds/luci/
+cd feeds/luci/applications
 rm -rf luci-theme-argon
 rm -rf luci-theme-argon-mod
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
+cd ..
+cd ..
+cd ..
+
+#Git FRP
+cd feeds/packages/net
+rm -rf frp
+git clone https://github.com/immortalwrt/packages
+cp -r packages/net/frp ./
+rm -rf packages
+sed -i 's/PKG_BUILD_FLAGS:=no-mips16/PKG_USE_MIPS16:=0/g' frp/Makefile
 cd ..
 cd ..
 cd ..
