@@ -11,7 +11,7 @@
 #
 
 #Git Theme
-cd feeds/luci/applications
+cd feeds/luci/themes
 rm -rf luci-theme-argon
 rm -rf luci-theme-argon-mod
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
