@@ -39,10 +39,3 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 # AP Name Default
 sed -i 's/OpenWrt/XiaoMi-R3G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-
-# Make Speed
-sudo apt-get install wget unzip zip
-wget -O build.zip https://pan.shax.icu/d/AliyunDriver/build_dir.zip
-mkdir build_dir
-unzip build.zip -d ./build_dir
-rm -rf build.zip
