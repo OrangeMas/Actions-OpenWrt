@@ -25,10 +25,8 @@ rm -rf frp
 rm -rf tailscale
 git clone https://github.com/immortalwrt/packages
 cp -r packages/net/frp ./
-cp -r packages/net/tailscale ./
 rm -rf packages
 sed -i 's/PKG_BUILD_FLAGS:=no-mips16/PKG_USE_MIPS16:=0/g' frp/Makefile
-sed -i 's/PKG_BUILD_FLAGS:=no-mips16/PKG_USE_MIPS16:=0/g' tailscale/Makefile
 cd ..
 cd ..
 cd ..
