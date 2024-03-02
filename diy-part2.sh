@@ -38,5 +38,9 @@ sed -i 's/PKG_BUILD_FLAGS:=no-mips16/PKG_USE_MIPS16:=0/g' feeds/packages/lang/ru
 sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 # Themes Default
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+# Themes Default For OpenWRT23.05
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-light/Makefile
 # AP Name Default
 sed -i 's/OpenWrt/XiaoMi-R3G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# AP Name Default For ImmortalWrt
+sed -i 's/ImmortalWrt/XiaoMi-R3G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
