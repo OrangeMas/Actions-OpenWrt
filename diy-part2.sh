@@ -50,10 +50,10 @@ sed -i 's/luci-theme-bootstrap/luci-theme-design/g' feeds/luci/collections/luci/
 sed -i 's/OpenWrt/XiaoMi-R3G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # Clash Meta Core
-curl -sL -m 30 --retry 2 https://raw.githubusercontent.com/vernesong/OpenClash/core/master/meta/clash-linux-mipsle-softfloat.tar.gz -o /tmp/clash.tar.gz
-tar zxvf /tmp/clash.tar.gz -C /tmp
-chmod +x /tmp/clash
-mkdir -p ./feeds/openclash/luci-app-openclash/root/etc/openclash/core
-mv /tmp/clash ./feeds/openclash/luci-app-openclash/root/etc/openclash/core/clash_meta
-rm -rf /tmp/clash.tar.gz
+# curl -sL -m 30 --retry 2 https://raw.githubusercontent.com/vernesong/OpenClash/core/master/meta/clash-linux-mipsle-softfloat.tar.gz -o /tmp/clash.tar.gz
+# tar zxvf /tmp/clash.tar.gz -C /tmp
+# chmod +x /tmp/clash
+# mkdir -p ./feeds/openclash/luci-app-openclash/root/etc/openclash/core
+# mv /tmp/clash ./feeds/openclash/luci-app-openclash/root/etc/openclash/core/clash_meta
+# rm -rf /tmp/clash.tar.gz
 
